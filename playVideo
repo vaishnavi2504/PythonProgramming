@@ -1,0 +1,10 @@
+#Program to automatically open a web browser and play a video after a specified time
+
+import webbrowser
+import time
+
+count=0
+while(count<=3):
+  time.sleep(10) #plays the video after every 10 seconds for 3 times
+  webbrowser.open('https://www.youtube.com/watch?v=VPRjCeoBqrI')
+  count=count+1
