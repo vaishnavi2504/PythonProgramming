@@ -1,0 +1,21 @@
+Program to draw a square and a circle
+import turtle
+def draw_square_circle():
+ window=turtle.Screen()
+ window.bgcolor("red")
+ 
+ vaish=turtle.Turtle() # init() function is invoked which in turn allocates memory to vaish
+ vaish.color("yellow")
+ count=0
+ vaish.shape("turtle")
+ while(count<4):
+  vaish.forward(100)
+  vaish.right(90)
+  count=count+1
+  
+ bhargi=turtle.Turtle()
+ bhargi.color("yellow")
+ bhargi.circle(100)
+ 
+ window.exitonclick()
+draw_square_circle()
