@@ -1,0 +1,13 @@
+#This program renames the files in a directory and thereby de crypts a message which is jumbled up
+
+import re
+import os
+def rename_files():
+ file_path=os.listdir(r'C:\Python34\prank')
+ currentDir=os.getcwd() #fetches the current working directory
+ print('the current working dir is '+currentDir)
+ os.chdir("C:\Python34\prank")
+ for fname in file_content:
+  newName=re.sub(r'[0-9]',"",fname) #replaces numeric characters in the filename with a blank character
+  os.rename(fname,newName)
+rename_files()
